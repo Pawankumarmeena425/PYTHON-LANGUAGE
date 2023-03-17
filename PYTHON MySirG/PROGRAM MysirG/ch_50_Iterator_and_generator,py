@@ -1,0 +1,54 @@
+# Iterator
+
+r1 = range(1,10,1)
+it  = iter(r1)
+print(it)
+print(next(it))
+# there is not option to backward
+print(next(it))
+
+for i in range(7):
+    print(next(it))
+
+
+# Generator
+def f1():
+    yield 10
+    yield 20
+    yield 30
+
+g = f1()
+print(next(g))
+print(next(g))
+print(next(g))
+
+a = f1()
+for e in a: # genearter work like iterator
+    print(e)
+
+
+
+def f2():
+    a =10
+    while a<50:
+        yield a
+        a = a+10
+a   =  f2()
+for  e in a :
+    print(e , end=' ')
+
+
+# Difference between yield and return 
+# after return function teriminate, but yield after value return function pause not terminate
+
+
+l1=[43,2,3,4,43,32]
+for e in l1:
+    print(e,end=' ')
+
+it  = iter(l1)  # it gives the object of the list
+while True:
+    try:
+        print(next(it),end=' ')
+    except StopIteration:
+        break

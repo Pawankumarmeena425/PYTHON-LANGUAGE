@@ -1,0 +1,6 @@
+# power operator (a**b)
+print(2**12)
+print(2**-2)
+print(-2**2)
+print((-2)**2)
+print(2**1000000)
