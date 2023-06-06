@@ -14,7 +14,7 @@ try:
 except ZeroDivisionError:
     print("division by zero exception")
 
-print(c)
+# print(c)
 print("Program still continue")
 
 # Case 3 : explictly raise  , Default exception handler

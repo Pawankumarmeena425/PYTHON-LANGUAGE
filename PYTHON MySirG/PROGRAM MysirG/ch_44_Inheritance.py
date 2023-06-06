@@ -11,7 +11,6 @@ class Student(Person):
     def __init__(self,n,a,r):
         Person.__init__(self,n,a)#when we call instance object using class name, then implicitly no object is pass so explictly we rquire pass object
         super().__init__(n,a) # super given instance 
-        
         self.rollno = r
 
     def setRollnl(self,r):

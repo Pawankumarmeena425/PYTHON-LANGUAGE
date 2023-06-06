@@ -1,4 +1,3 @@
-
 def deco_result(func):  # now result function pass as a argument in the deco_result
     def distinction(marks):
         for m in marks:

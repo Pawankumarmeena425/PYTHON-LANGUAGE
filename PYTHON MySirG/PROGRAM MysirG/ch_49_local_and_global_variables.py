@@ -2,7 +2,7 @@
 x=20
 def f1():
     X=10  #local varialbe
-    print(x)  #local variable x
+    print(X)  #local variable x
 
 f1()
 print(x)  #global variable x
@@ -33,7 +33,7 @@ print(x1)
 x1=40
 def f2():
    
-    x1  =10  #local variable
+    x1  = 10  #local variable
     print(x1)  #print local variable
     d =  globals()
     d['x1']=90
